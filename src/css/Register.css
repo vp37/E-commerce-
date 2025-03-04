@@ -1,0 +1,131 @@
+.formcontent {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; 
+  align-items: center; 
+  width: 100%;
+  height: 100vh; 
+  margin: 0;
+  padding: 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f7f7f7;
+  background-image: url('../images/register.jpg');
+  background-size: cover; 
+  background-position: center;
+  overflow: hidden;
+}
+
+
+.form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 400px; 
+  padding: 30px;
+  border-radius: 8px; 
+  background-color: rgba(251, 180, 180, 0.56);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  margin-left: 800px;
+}
+
+h1 {
+  text-align: center;
+  font-size: 24px;
+  color: #118a84;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.form-inputs {
+  margin-bottom: 20px;
+}
+
+.form-inputs label {
+  font-size: 14px;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: white;
+}
+
+.forminput {
+  width: 100%;
+  padding: 12px;
+  font-size: 14px;
+  border: none; /* Remove border */
+  border-bottom: 2px solid #ccc; /* Add only bottom border */
+  outline: none;
+  border-radius: 4px; /* Rounded corners for the input */
+  transition: all 0.3s ease; /* Smooth transition for focus effect */
+
+}
+
+.forminput:focus {
+  border-bottom: 2px solid #118a84; /* Change bottom border color when focused */
+  background-color: #ffffff; /* Change background color on focus */
+}
+
+.form-inputs input::placeholder {
+  color: #aaa; /* Placeholder color */
+}
+
+p {
+  color: red;
+  font-size: 12px;
+  margin-top: 5px;
+}
+
+.form-input-btn {
+  background-color: #118a84;
+  color: white;
+  padding: 12px;
+  font-size: 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 20px;
+}
+
+.form-input-btn:hover {
+  background-color: #0d6e65;
+}
+
+button[type="button"] {
+  background-color: transparent;
+  color: #118a84;
+  border: 2px solid #118a84;
+  padding: 10px;
+  cursor: pointer;
+  margin-top: 10px;
+  font-size: 14px;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+}
+
+button[type="button"]:hover {
+  background-color: #118a84;
+  color: white;
+}
+
+/* Responsive Design */
+@media (max-width: 480px) {
+  .formcontent {
+    padding: 15px;
+  }
+
+  .form {
+    padding: 20px;
+  }
+
+  h1 {
+    font-size: 20px;
+  }
+
+  .form-input-btn {
+    font-size: 14px;
+  }
+
+  button[type="button"] {
+    font-size: 14px;
+  }
+}

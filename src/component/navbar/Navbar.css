@@ -1,0 +1,149 @@
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body{
+  scroll-behavior: smooth;
+ 
+}
+.navcontainer1 {
+  width: 100%;
+  background-color: #f8f8f8;
+  display: flex;
+  flex-direction: column; /* Allow stacking the announcement and navbar */
+  border-bottom: 2px solid #ddd;
+ 
+ 
+
+}
+.announcontainer {
+  background-color: #118a84da;
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-weight: bold;
+  font-size: 16px;
+  padding: 0.3em;
+}
+
+.announcontainer h1 {
+  display: flex;
+  align-items: center;
+  gap: 12px; 
+  margin: 5px 0;
+  font-size: 14px; 
+  color: white;
+}
+/* Navbar Wrapper */
+.navwrapper {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px; /* Horizontal padding for spacing */
+  height: 60px; /* Set height for the navbar */
+}
+
+/* Left Section */
+.navleft {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.store {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+}
+
+.navsearch {
+  display: flex;
+  align-items: center;
+  background: #fff;
+  padding: 3px 10px;
+  border: 1px solid #ccc;
+}
+
+.navsearch input {
+  border: none;
+  outline: none;
+  padding: 5px;
+  width: 150px;
+  font-size: 14px;
+}
+
+.navsearch svg {
+  color: #333;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+/* Center Section */
+.navcenter {
+  margin-top: 10px;
+  display: flex; 
+  align-items: center;
+}
+
+.navlogo {
+  font-size: 24px;
+  font-weight: bold;
+  color: #222;
+}
+
+/* Right Section */
+.navright {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.navmenuitem {
+  font-size: 16px;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+.navmenuitem a{
+  text-decoration: none;
+  font-size: 18px;
+  color: black;
+}
+.navmenuitem a:hover{
+  color: #ff6600;
+}
+
+.navmenuitem:hover {
+  color: #ff6600; 
+}
+.cartIcon {
+  font-size: 24px;
+  position: relative; 
+  color: #333; 
+}
+.cart-count {
+  position: absolute;
+  top: 45px; 
+  right: 10px; 
+  background-color: #ff0000; 
+  color: white;
+  font-size: 12px; 
+  font-weight: bold; 
+  border-radius: 50%; 
+  width: 20px;
+  height: 20px; 
+  display: flex; 
+  align-items: center; 
+  justify-content: center; 
+}
+
+
+.cartIcon:hover {
+  color: #ff6600; 
+}
+
+

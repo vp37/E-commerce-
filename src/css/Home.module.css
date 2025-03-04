@@ -1,0 +1,147 @@
+* {    
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  scroll-behavior: smooth;
+  background-color: #f9f9f9;
+}
+
+.homecontainer {
+  margin: 0 auto;
+}
+
+.homecard {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+}
+
+h2 {
+  text-align: center;
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.productlist {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+  justify-items: center;
+  padding: 10px;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.productItem {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  padding: 15px;
+  text-align: center;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease;
+  cursor: pointer;
+  width: 100%;
+  max-width: 300px;
+  
+  /* Apply animation with delay for staggered effect */
+  opacity: 0;
+  animation: fadeInUp 0.6s ease forwards;
+}
+
+.productItem:nth-child(1) { animation-delay: 0.2s; }
+.productItem:nth-child(2) { animation-delay: 0.4s; }
+.productItem:nth-child(3) { animation-delay: 0.6s; }
+.productItem:nth-child(4) { animation-delay: 0.8s; }
+.productItem:nth-child(5) { animation-delay: 1s; }
+.productItem:nth-child(6) { animation-delay: 1.2s; }
+.productItem:nth-child(7) { animation-delay: 1.4s; }
+.productItem:nth-child(8) { animation-delay: 1.6s; }
+.productItem:nth-child(9) { animation-delay: 1.8s; }
+.productItem:nth-child(10) { animation-delay: 2.0s; }
+
+.productItem:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Image Container */
+.productImage {
+  width: 100%;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.productImage img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+/* Product Information */
+.productInfo {
+  margin-top: 15px;
+}
+
+.productItem h3 {
+  font-size: 18px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.productItem p {
+  font-size: 14px;
+  color: #555;
+}
+
+.productItem .price {
+  color: #ff6600;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.companySection, .productDescriptionSection, .contactSection {
+  text-align: center;
+  padding: 20px;
+  background: #1aaaa22b;
+  margin: 20px 0;
+  border-radius: 10px;
+}
+
+.companySection h2,
+.productDescriptionSection h2,
+.contactSection h2 {
+  font-size: 24px;
+  color: #333;
+}
+
+.companySection p,
+.productDescriptionSection p,
+.contactSection p {
+  font-size: 16px;
+  color: #232222;
+  margin: 5px 0;
+}
+
+.mapContainer {
+  margin-top: 15px;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
